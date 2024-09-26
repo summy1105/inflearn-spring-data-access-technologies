@@ -20,7 +20,7 @@ import java.util.Optional;
 @Transactional
 public class JpaItemRepository implements ItemRepository {
 
-    private final EntityManager em;
+    private final EntityManager em; // 순수한 jpa기술 스프링과 관계없음
 
     public JpaItemRepository(EntityManager em) {
         this.em = em;
